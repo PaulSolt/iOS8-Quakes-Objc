@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+// Forward delcare class in header, include it in the implementation file
+@class LSIQuakeFetcher;
+
 @interface EarthquakesViewController : UIViewController
+
+@property LSIQuakeFetcher *quakeFetcher;
 
 @end
