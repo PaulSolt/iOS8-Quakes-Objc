@@ -8,10 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-
 NSData *loadFile(NSString *filename, NSBundle *bundle) {
-//	NSBundle *bundle = [NSBundle bundleForClass:[self class]];
-	
 	NSString *basename = [filename stringByDeletingPathExtension];
 	NSString *extension = [filename pathExtension];
 	

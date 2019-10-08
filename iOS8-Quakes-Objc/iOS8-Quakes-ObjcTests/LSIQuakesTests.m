@@ -22,6 +22,12 @@
 	
 	XCTAssertNotNil(data);
 	NSLog(@"Data; %@", data);
+
+	NSError *error = nil;
+	NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+	
+	NSLog(@"Error: %@", error);
+	NSLog(@"JSON: %@", json);
 }
 
 

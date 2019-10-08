@@ -12,7 +12,6 @@
 		BD7E0312234CF6520002A7F9 /* LSIQuakesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7E0311234CF6520002A7F9 /* LSIQuakesTests.m */; };
 		BD7E0315234CF70D0002A7F9 /* LSIQuake.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7E0314234CF70D0002A7F9 /* LSIQuake.m */; };
 		BD7E0319234CF7E60002A7F9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD7E0318234CF7E60002A7F9 /* MapKit.framework */; };
-		BD7E031C234CF8EF0002A7F9 /* LSIFileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7E031B234CF8EF0002A7F9 /* LSIFileHelper.m */; };
 		BD7E031E234CFA700002A7F9 /* Quake.json in Resources */ = {isa = PBXBuildFile; fileRef = BD7E031D234CFA700002A7F9 /* Quake.json */; };
 		BDC9629F234CF174002E5296 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC9629E234CF174002E5296 /* AppDelegate.m */; };
 		BDC962A2234CF174002E5296 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC962A1234CF174002E5296 /* SceneDelegate.m */; };
@@ -43,7 +42,6 @@
 		BD7E0314234CF70D0002A7F9 /* LSIQuake.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIQuake.m; sourceTree = "<group>"; };
 		BD7E0318234CF7E60002A7F9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		BD7E031A234CF8EF0002A7F9 /* LSIFileHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIFileHelper.h; sourceTree = "<group>"; };
-		BD7E031B234CF8EF0002A7F9 /* LSIFileHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIFileHelper.m; sourceTree = "<group>"; };
 		BD7E031D234CFA700002A7F9 /* Quake.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Quake.json; sourceTree = "<group>"; };
 		BDC9629A234CF174002E5296 /* iOS8-Quakes-Objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS8-Quakes-Objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDC9629D234CF174002E5296 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -81,7 +79,6 @@
 			children = (
 				BD7E0308234CF61B0002A7F9 /* iOS8_Quakes_ObjcTests.m */,
 				BD7E031A234CF8EF0002A7F9 /* LSIFileHelper.h */,
-				BD7E031B234CF8EF0002A7F9 /* LSIFileHelper.m */,
 				BD7E0311234CF6520002A7F9 /* LSIQuakesTests.m */,
 				BD7E031D234CFA700002A7F9 /* Quake.json */,
 				BD7E030A234CF61B0002A7F9 /* Info.plist */,
@@ -246,7 +243,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD7E031C234CF8EF0002A7F9 /* LSIFileHelper.m in Sources */,
 				BD7E0312234CF6520002A7F9 /* LSIQuakesTests.m in Sources */,
 				BD7E0309234CF61B0002A7F9 /* iOS8_Quakes_ObjcTests.m in Sources */,
 			);
