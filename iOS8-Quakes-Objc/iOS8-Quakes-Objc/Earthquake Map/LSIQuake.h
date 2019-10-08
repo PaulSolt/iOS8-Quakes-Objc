@@ -12,6 +12,20 @@
 
 // Properties
 @property double magnitude;
+@property NSString *place;
+@property NSDate *time;
+//@property double latitude;	// TODO: implement these properties
+//@property double longitude;
+
+// Primitive data types
+// double, int, float, char (single character),
+
+// char * = c-string = "Paul"
+// NSString = @"Dave"
+// NSString = object
+// CGRect, NSRect = structs (primitive types, not objects)
+// NSTimeInterval, NSInteger, NSUInteger = primitive type
+
 
 
 // Methods

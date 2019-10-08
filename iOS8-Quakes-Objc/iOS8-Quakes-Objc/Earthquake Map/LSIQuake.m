@@ -23,11 +23,28 @@
 		// ObjC: All values in NSArray and NSDictionary are objects
 		// NSNumber, NSValue
 		
-		NSNumber *magNumber = properties[@"mag"];
+		NSNumber *magNumber = properties[@"mag"]; // Object
+		NSString *placeString = properties[@"place"];
 		
-		_magnitude = [magNumber doubleValue];
+		NSNumber *timeInMillisecondsNumber = properties[@"time"];
+		// Make sure to cast to floating-point (double): 5000 -> 5000.0
+		NSTimeInterval timeInSeconds = (NSTimeInterval)[timeInMillisecondsNumber longValue] / 1000.0;
 		
+		// TODO: parse Latitude/Longitude
 		
+		if (magNumber != nil &&
+			placeString != nil &&
+			timeInMillisecondsNumber != nil
+			) {
+			_magnitude = [magNumber doubleValue]; // primative data type
+			_place = placeString;
+			_time = [NSDate dateWithTimeIntervalSince1970:timeInSeconds];
+		} else {
+			NSLog(@"Error: unable to parse earthquake: %@", dictionary);
+			// TODO: import Assert or some other function
+			
+			return nil;
+		}
 	}
 	return self;
 }
