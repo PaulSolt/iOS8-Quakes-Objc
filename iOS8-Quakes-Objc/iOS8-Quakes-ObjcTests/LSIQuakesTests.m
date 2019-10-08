@@ -7,11 +7,22 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "LSIFileHelper.h"
 
 @interface LSIQuakesTests : XCTestCase
 
 @end
 
 @implementation LSIQuakesTests
+
+- (void)testParseQuakeJSON {
+	
+	NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+	NSData *data = loadFile(@"Quake.json",bundle);
+	
+	XCTAssertNotNil(data);
+	NSLog(@"Data; %@", data);
+}
+
 
 @end
