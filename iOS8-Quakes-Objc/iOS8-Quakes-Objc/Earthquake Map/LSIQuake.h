@@ -7,15 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <MapKit/MapKit.h>
 
-@interface LSIQuake : NSObject
+@interface LSIQuake : NSObject <MKAnnotation>
 
 // Properties
 @property double magnitude;
 @property NSString *place;
 @property NSDate *time;
-//@property double latitude;	// TODO: implement these properties
-//@property double longitude;
+@property double latitude;	// TODO: implement these properties
+@property double longitude;
+
+@property(nonatomic, readonly) CLLocationCoordinate2D coordinate;
+
 
 // Primitive data types
 // double, int, float, char (single character),

@@ -40,6 +40,12 @@
 		// TODO:
 		// 1. MKAnnotation for mapKit mapView
 		
+		dispatch_async(dispatch_get_main_queue(), ^(void){
+			//Run UI Updates
+//			self.tableView.reloadData()
+		});
+
+		
 	}];
 //	[self.quakeFetcher fetchQuakesWithCompletionBlock:]
 }

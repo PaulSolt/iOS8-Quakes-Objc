@@ -49,4 +49,16 @@
 	return self;
 }
 
+- (NSString *)description {
+	
+	return [NSString stringWithFormat: @"Place: %@, Magnitude: %f", self.place, self.magnitude];
+}
+
+// MKAnnotation
+
+- (CLLocationCoordinate2D)coordinate {
+	return CLLocationCoordinate2DMake(self.latitude, self.longitude);
+}
+
+
 @end
