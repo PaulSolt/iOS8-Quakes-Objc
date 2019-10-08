@@ -10,4 +10,11 @@
 
 @interface LSIQuake : NSObject
 
+// Properties
+@property double magnitude;
+
+
+// Methods
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
+
 @end

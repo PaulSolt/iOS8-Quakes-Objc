@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "LSIFileHelper.h"
+#import "LSIQuake.h"
 
 @interface LSIQuakesTests : XCTestCase
 
@@ -28,6 +29,13 @@
 	
 	NSLog(@"Error: %@", error);
 	NSLog(@"JSON: %@", json);
+	
+	LSIQuake *quake = [[LSIQuake alloc] initWithDictionary: json];
+	XCTAssertNotNil(quake);
+	
+	// Test all the properties are parsing correctly
+	XCTAssertEqualWithAccuracy(1.29, quake.magnitude, 0.001);
+	
 }
 
 
